@@ -12,20 +12,31 @@
 
     .sidebar {
       width: 25%;
-      background: #f1f1f1;
+      background: #f5f5f5;
       padding: 20px;
       box-sizing: border-box;
+      border-right: 1px solid #ddd;
     }
 
     .sidebar h2 {
       margin-top: 0;
     }
 
-    .friends-btn {
-      font-size: 18px;
+    .add-friend {
       font-weight: bold;
       cursor: pointer;
-      margin-top: 20px;
+      margin: 15px 0;
+    }
+
+    .friend {
+      padding: 8px 0;
+      cursor: pointer;
+      color: #333;
+    }
+
+    .friend:hover {
+      background: #e0e0e0;
+      padding-left: 5px;
     }
 
     .chat {
@@ -73,15 +84,23 @@
 
   <div class="sidebar">
     <h2>ChatBlazer 🔥</h2>
-    <div class="friends-btn">+Friends</div>
+
+    <!-- Always at top -->
+    <div class="add-friend">+ Friends</div>
+
+    <!-- Example friends -->
+    <div class="friend">Henry</div>
+    <div class="friend">Tony</div>
+    <div class="friend">Felo</div>
+
   </div>
 
   <div class="chat">
-    <div class="chat-header">+Friends</div>
+    <div class="chat-header">Henry</div>
 
     <div class="messages">
-      <div class="message">Hello 👋</div>
-      <div class="message">Welcome to ChatBlazer!</div>
+      <div class="message">Hey 👋</div>
+      <div class="message">This looks like a real chat app!</div>
     </div>
 
     <div class="input-area">
